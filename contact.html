@@ -3,212 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Promise Building Co. Ltd</title>
-    
+    <title>Contact Us - Ham Construction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header id="header">...</header>
 
-    <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Promise<span>Building Co. Ltd</span></a>
-
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li class="has-dropdown">
-                        <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down dropdown-arrow"></i></a>
-                        <ul class="dropdown" id="servicesDropdown">
-                            <li><a href="services.html#construction">Construction & Fencing</a></li>
-                            <li><a href="services.html#materials">Building Materials Sales</a></li>
-                            <li><a href="services.html#realestate">Real Estate & Rentals</a></li>
-                            <li><a href="services.html#design">Architectural & Building Design</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="projects.html" class="nav-link">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="mobile-overlay" id="mobileOverlay"></div>
-
-    <!-- Page Hero -->
-    <section class="page-hero contact-bg">
-        <div class="page-hero-content">
-            <h1>Contact Us</h1>
-            <p>Reach out to Promise Building Co. Ltd for construction, real estate, and building material services.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
+    <section style="padding-top: 150px;">
         <div class="container">
-            <div class="contact-container fade-in">
-
-                <!-- FORM -->
-                <div class="contact-form">
-                    <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Send Us Your Request</h3>
-
+            <h2 class="text-center" data-aos="fade-up">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-pin"></i></div>
+                        <div class="info-text"><h4>Visit Us</h4><p>Konyokonyo, Juba, South Sudan</p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-text"><h4>Call Us</h4><p>+211 925 888 028</p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text"><h4>Email Us</h4><p>info@hamconstruction.com</p></div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
                     <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" required placeholder="Your full name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required placeholder="example@email.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" required placeholder="+XXX XXX XXX XXX">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" class="form-control">
-                                <option value="">Select a service</option>
-                                <option>Construction & Building</option>
-                                <option>Fencing Works</option>
-                                <option>Sale of Blocks</option>
-                                <option>Sale of Land & Houses</option>
-                                <option>Sale of Aggregates / Marram / Stones / Sand</option>
-                                <option>House Rental (Real Estate)</option>
-                                <option>Building & Flat Design</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" class="form-control" required placeholder="Describe your request or project..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn" style="width:100%; font-size:1.2rem; padding:1.3rem;">
-                            Submit Request
-                        </button>
+                        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Email Address" required></div>
+                        <div class="form-group"><input type="tel" placeholder="Phone Number"></div>
+                        <div class="form-group"><textarea rows="5" placeholder="Your Message" required></textarea></div>
+                        <button type="submit" class="btn btn-block">Send Message</button>
                     </form>
                 </div>
-
-                <!-- CONTACT INFO -->
-                <div class="contact-info">
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Call Us</h3>
-                            <p style="font-size:1.4rem; font-weight:700; color:var(--gold);">
-                                +211 985 119 991
-                            </p>
-                            <p>Office Hours: Monday - Saturday, 8:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Our Office</h3>
-                            <p style="font-weight:600;">Promise Building Co. Ltd</p>
-                            <p>Juba / City</p>
-                            <p>South Sudan</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>WhatsApp</h3>
-                            <p>Message us directly for fast support and quotations.</p>
-
-                            <a href="#" class="whatsapp-btn" target="_blank">
-                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="map-placeholder">
-                        <div class="map-overlay">
-                            <h3>Visit Us</h3>
-                            <p>Office Located in — Update Location Here</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <section class="cta">
         <div class="container">
-            <div class="footer-content">
-
-                <div class="footer-about">
-                    <div class="footer-logo">Promise<span>Building Co. Ltd</span></div>
-                    <p>We provide professional construction, real estate, and building material services with quality and trust.</p>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projects</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Our Services</h3>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Construction & Fencing</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Real Estate & Rentals</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Building Materials Supply</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Building Design</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-links">
-                    <h3 class="footer-heading">Contact Info</h3>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-phone"></i> +211 985 119 991</a></li>
-                        <li><a href="#"><i class="fas fa-envelope"></i> info@promisebuilding.com</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Juba South Sudan</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="copyright">
-                <p>© 2025 Promise Building Co. Ltd. All Rights Reserved.</p>
-            </div>
+            <h2>Prefer to Email Directly?</h2>
+            <p>Send us an email at <strong>info@hamconstruction.com</strong> and we'll respond within 24 hours.</p>
+            <a href="mailto:info@hamconstruction.com" class="btn btn-outline-light">Send Us Email</a>
         </div>
-    </footer>
+    </section>
 
-    <a href="#" class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-
+    <footer>...</footer>
+    <div class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
